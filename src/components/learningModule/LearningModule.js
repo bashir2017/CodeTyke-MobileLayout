@@ -2,7 +2,7 @@ import React from 'react';
 import SelectionBox from '../selectionBox/SelectionBox';
 import Button from '../button/Button';
 
-import './Styles.scss';
+import './Styles.scss'; 
 
 const LearningModule = ({setGameStatus}) => {
   const [currentQuestionId, setCurrentQuestionId] = React.useState(0);
@@ -57,7 +57,7 @@ const LearningModule = ({setGameStatus}) => {
               { possibleAnswers }
             </div>
             <div className="learningModule__submitButtonContainer">
-              <Button label="Submit" inactive handleSubmit={ handleSubmit } />
+              <Button className='submitButton' label="Submit" inactive handleSubmit={ handleSubmit } />
             </div>
           </div>
         </>
